@@ -60,7 +60,7 @@ class NewsDisplay(APIView):
         serializer = NewsGroupbyCategorySerializer(data)
         if serializer.is_valid():
             return Response(serializer.data)
-        return Response({'status': 'fail'})
+        return Response(serializer.errors)
 
 
 

@@ -6,6 +6,7 @@ $.ajax({
 
                 },
                 success: function (data) {
+                    console.log(data)
                     if (data.get('status') == 'fail'){
                         $('#fields_body').html('<h1> No News </h1>')
                     }

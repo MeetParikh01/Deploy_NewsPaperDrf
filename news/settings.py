@@ -99,8 +99,8 @@ DATABASES = {
         'NAME': 'news',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
-        'HOST': '34.194.167.72',
-        'PORT': '5432',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 AUTH_USER_MODEL = 'users.CustomUser'
@@ -230,5 +230,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
 CKEDITOR_UPLOAD_PATH = "images/"
 CKEDITOR_IMAGE_BACKEND = "pillow"
-# import django_heroku
-# django_heroku.settings(locals())
+import django_heroku
+django_heroku.settings(locals())

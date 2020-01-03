@@ -6,9 +6,14 @@ $.ajax({
 
                 },
                 success: function (data) {
+                    if (data.get('status') == 'fail'){
+                        $('#fields_body').html('<h1> No News </h1>')
+                    }
+                    else{
                     var str =data.Mobile[0].news_body
                     var end = str.indexOf('</p>')
                     $('#fields_body').html(Body(data))
+                }
                 }
             });
 

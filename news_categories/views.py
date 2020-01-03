@@ -58,9 +58,7 @@ class NewsDisplay(APIView):
     def get(self, request, *args, **kwargs):
         data= AddNewsModel.objects.all()
         serializer = NewsGroupbyCategorySerializer(data)
-        if serializer.is_valid():
-            return Response(serializer.data)
-        return Response(serializer.errors)
+        return Response(serializer.data)
 
 
 

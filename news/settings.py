@@ -99,7 +99,7 @@ DATABASES = {
         'NAME': 'news',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
-        'HOST': 'stormy-crag-00977.herokuapp.com',
+        'HOST': '34.194.167.72',
         'PORT': '5432',
     }
 }

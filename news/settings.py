@@ -99,8 +99,8 @@ DATABASES = {
         'NAME': 'news',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
-        'HOST': 'localhost',
-        'PORT': '',
+        'HOST': 'stormy-crag-00977.herokuapp.com',
+        'PORT': '5432',
     }
 }
 AUTH_USER_MODEL = 'users.CustomUser'

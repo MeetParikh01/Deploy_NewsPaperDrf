@@ -104,7 +104,7 @@ class LoginApiView(APIView):
             if not request.headers.get('Http-Authentication'):
                 data = json.dumps({'email': email, 'password': password})
                 headers = {'content-type': 'application/json'}
-                response_login = requests.post('http://127.0.0.1:8000/api-token-auth/',
+                response_login = requests.post('https://stormy-crag-00977.herokuapp.com/api-token-auth/',
                                                data=data, headers=headers)
                 response_login_dict = json.loads(response_login.content)
             else:
